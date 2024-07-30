@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#calculator{
+    height: 100vh;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 200px;
+}
+
+.op{
+    background-color: #FFE6C7;
+    color: #FF6000;
+}
+
+#c, #igual{
+    background-color: #FFE6C7;
+    color: black;
+}
+
+button{
+    width: 50px;
+    height: 50px;
+    border: 0px;
+    font-family: "Montserrat", sans-serif;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color:#dedcd9;
+    color: black;
+}
+
+#del{font-size: 0.6em;}
+
+.op:hover{background-color: #FFA559;}
+
+
+input{
+    width: 100%;
+    height: 50px;
+    border: 0px;
+    text-align: right;
+    font-size: 2em;
+    padding-right: 5px;
+}
