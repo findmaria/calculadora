@@ -5,56 +5,60 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
-#calculator{
+.calculator{
+    width: 100vw;
     height: 100vh;
-    background-color: blue;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 }
 
-.flex{
-    display: flex;
-    flex-wrap: wrap;
-    width: 200px;
-    height: 200px;
+table{
+    border-collapse: collapse;
+    text-align: center;
 }
 
-.op{
-    background-color: #FFE6C7;
-    color: #FF6000;
-}
-
-#c, #igual{
-    background-color: #FFE6C7;
-    color: black;
-}
-
-button{
+tr, td, th{
     width: 50px;
     height: 50px;
-    border: 0px;
-    font-family: "Montserrat", sans-serif;
 }
 
-button:hover{
-    cursor: pointer;
-    background-color:#dedcd9;
-    color: black;
-}
-
-#del{font-size: 0.6em;}
-
-.op:hover{background-color: #FFA559;}
-
-
-input{
-    width: 100%;
-    height: 50px;
-    border: 0px;
-    text-align: right;
+.display{
+    background-color: #454545;
+    color: white;
+    border: none;
     font-size: 2em;
+    width: 100%;
+    height: 100%;
+    text-align: right;
     padding-right: 5px;
 }
+
+.btn{
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat';
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.btn-clear, .btn-eq{background-color: #FFA559;}
+
+.btn-del{
+    font-size: 0.5em;
+    font-weight: 500;
+}
+
+.btn:hover{background-color:#f5c297;}
+
+.btn-clear:hover, .btn-eq:hover{background-color: #f5c297;}
+
+.color{background-color: #FFE6C7;}
+
+.color:hover{background-color:#f5c297;}
+
